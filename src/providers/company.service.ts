@@ -7,7 +7,7 @@ import { PrismaService } from "./prisma.service"
 export class companyService implements igeneralCompanySerivce{
     constructor(private prismautil: PrismaService) {}
     async getSpecificCompanydata(customerName: string, dates: string):Promise<result[]> {
-        return this.prismautil.$queryRaw`execute demo ${customerName},${dates}`
+        return this.prismautil.$queryRaw`execute company ${customerName},${dates}`
     }
     async getCompaniesList() :Promise<string[]> {
         return this.prismautil.$queryRaw`execute companies`
