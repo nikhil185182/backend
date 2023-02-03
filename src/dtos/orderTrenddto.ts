@@ -3,5 +3,4 @@ export interface OrderData {
     AttemptedOrders : number;
     CompletedOrders : number;
     TotalOrders : number;
-
 }
